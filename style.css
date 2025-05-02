@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url(fonts/Outfit-var-latin.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+                   U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+                   U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+    --slate-light: hsl(212, 45%, 89%);
+    --slate-medium: hsl(216, 15%, 48%);
+    --slate-dark: hsl(218, 44%, 22%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 15px; */
+    min-height: 100%;
+    height: 100%;
+    background-color: var(--slate-light);
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Outfit, Arial, Helvetica, sans-serif;
+}
+
+main {
+    max-width: 320px;
+    border-radius: 20px;
+    padding: 1em;
+    background-color: white;
+}
+
+img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+section {
+    padding: 0.5em 1em;
+    text-align: center;
+}
+
+section > * {
+    margin: 0.75em 0;
+}
+
+h1 {
+    font-size: 1.35em;
+    font-weight: bold;
+    color: var(--slate-dark);
+}
+
+p {
+    font-weight: normal;
+    font-size: 15px;
+    color: var(--slate-medium);
+}
+
+.attribution {
+    position: relative;
+    padding: 1em;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-height: 570px) {
+    .attribution {
+        position: absolute;
+        bottom: 0;
+    }
+}
